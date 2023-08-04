@@ -1,5 +1,7 @@
 package Algorithms.lesson2.Interface;
 
+import Algorithms.lesson2.Exceptions.CustomExceptDemo;
+
 //Динамическая очередь
 //dynamische Warteschlange
 public class DynQueue implements ICharQ {
@@ -35,7 +37,7 @@ public class DynQueue implements ICharQ {
 }
 
 class IQDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws CustomExceptDemo.QueueFullException, CustomExceptDemo.QueueEmptyException {
         FixedQueue q1 = new FixedQueue(10);
         DynQueue q2 = new DynQueue(5);
         CircularQueue q3 = new CircularQueue(10);
