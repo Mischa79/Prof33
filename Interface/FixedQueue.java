@@ -2,7 +2,7 @@ package Algorithms.lesson2.Interface;
 //класс реализующий очередь фиксированного размера
 //eine Klasse, die eine Warteschlange mit fester Größe implementiert
 
-public class FixedQueue implements ICharQ{
+public  class FixedQueue implements ICharQ{
 
     private final char []q;
     private int putLoc, getLoc;
